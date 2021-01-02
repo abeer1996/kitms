@@ -33,8 +33,8 @@ class RegisterController extends Controller
         // ]);
        
         $roles = Role::create([
-            'role_id'=> $request->input('roleId'),
-            'name'=> $request->input('name')
+            'role_id'=> $request->input('role_id'),
+            'role_name'=> $request->input('role_name')
         ]);
     
                 return redirect()->back()->with('message','Role Created Successfully');

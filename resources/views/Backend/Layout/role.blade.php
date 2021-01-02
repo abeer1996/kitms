@@ -36,12 +36,12 @@
 
   <div class="form-group">
     <label for="digit">Role Id</label>
-    <input type="digit" name="roleId" class="form-control"  placeholder="Enter Role Id">
+    <input type="digit" name="role_id" class="form-control"  placeholder="Enter Role Id">
   </div>
 
   <div class="form-group">
     <label for="string">Role Name</label>
-    <input type="string" name="name" class="form-control"  placeholder="Enter Role Name">
+    <input type="string" name="role_name" class="form-control"  placeholder="Enter Role Name">
   </div>
       </div>
 
@@ -73,7 +73,7 @@
         <tr>
             <td>{{$key + 1}}</td>
             <td>{{$role->role_id}}</td>
-            <td>{{$role->name}}</td>
+            <td>{{$role->role_name}}</td>
             <td>
                 <a class="btn btn-warning" href="">Edit</a>
                 <a class="btn btn-danger" href="">Delete</a>

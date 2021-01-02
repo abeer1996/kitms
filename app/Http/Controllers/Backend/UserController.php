@@ -39,5 +39,8 @@ class UserController extends Controller
     Auth::logout();
     return redirect()->route('login');
    }
-    
+    public function userInfo()
+    {
+        return view('Backend.Layout.userinfo');
+    }
 }

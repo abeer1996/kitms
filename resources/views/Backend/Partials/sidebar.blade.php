@@ -18,7 +18,7 @@
                 <i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
                 <li>
-                        <a class="treeview-item" href=""><i class="icon fa fa-circle-o">
+                        <a class="treeview-item" href="{{route('user.info')}}"><i class="icon fa fa-circle-o">
                         </i> User Info</a></li>
 
                 <li>    <a class="treeview-item" href="{{route('role.register')}}"><i class="icon fa fa-circle-o">
@@ -31,7 +31,7 @@
             </ul>
         </li>
 
-        <li><a class="app-menu__item" href=""><i class="app-menu__icon fa fa-pie-chart"></i><span
+        <li><a class="app-menu__item" href="{{route('payment.details')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span
                     class="app-menu__label">Payment Information</span></a></li>
 
         <li class="treeview"> <a class="app-menu__item" href="#" data-toggle="treeview">
@@ -39,10 +39,10 @@
                 <i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
                 <li>
-                        <a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o">
+                        <a class="treeview-item" href="{{route('course.list')}}"><i class="icon fa fa-circle-o">
                         </i>Add Course</a></li>
 
-                <li>    <a class="treeview-item" href="form-custom.html"><i class="icon fa fa-circle-o">
+                <li>    <a class="treeview-item" href="{{route('batch.list')}}"><i class="icon fa fa-circle-o">
                 </i>    Add Batch</a></li>
             </ul>
         </li>

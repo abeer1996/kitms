@@ -74,3 +74,24 @@
             <td>{{$teacher->doj}}</td>
             <td>{{$teacher->designation}}</td>
             
+
+
+
+
+
+
+
+
+            <tbody>
+        @foreach($roles as $key=>$role)
+        <tr>
+            <td>{{$key + 1}}</td>
+            <td>{{$role->role_id}}</td>
+            <td>{{$role->name}}</td>
+            <td>
+                <a class="btn btn-warning" href="">Edit</a>
+                <a class="btn btn-danger" href="">Delete</a>
+            </td>
+        </tr>
+        @endforeach
+    </tbody>

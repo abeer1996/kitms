@@ -57,5 +57,20 @@ Route::get('/registration/teacher/form','RegisterController@teacherForm')->name(
 Route::post('/registration/teacher/form','RegisterController@teacherFormSubmit')->name('teacher.formsubmit');
 Route::get('/registration/teacher/list','RegisterController@teacherlist')->name('teacher.list');
 
+// Payment Routing
+Route::get('/payment/details','PaymentController@paymentDetails')->name('payment.details');
+
+// User Info Routing
+Route::get('/registration/userinfo','UserController@userInfo')->name('user.info');
+
+// Course Routing
+Route::get('/Course/addcourse/courselist','CourseController@courselist')->name('course.list');
+Route::post('/Course/addcourse/courseform','CourseController@courseFormSubmit')->name('course.formsubmit');
+
+// Batch Routing
+Route::get('/Course/addbatch/batchlist','CourseController@batchlist')->name('batch.list');
+Route::get('/Course/addbatch/form','CourseController@batchform')->name('batch.form');
+Route::post('/Course/addbatch/form','CourseController@batchformSubmit')->name('batch.formsubmit');
+
 });
 
